@@ -1,18 +1,10 @@
-## Color settings
+## Theme settings
 
---- 
+Namespace: [Catppuccin](https://github.com/catppuccin/catppuccin)
 
-Scheme: "cattppucin"
-
-<p>
-  <span>Background: </span>
-  <span style="background-color: #1b1829; color: white;">#1B1829</span>
-</p>
-
+- [windows-terminal](https://github.com/catppuccin/windows-terminal)
 
 ## Plugins
-
----
 
 - [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
 - [tmux](https://github.com/tmux/tmux/wiki) (terminal emulator)
