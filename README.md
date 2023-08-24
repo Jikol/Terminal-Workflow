@@ -73,6 +73,11 @@ brew install fish
  
 [omf](https://github.com/oh-my-fish/oh-my-fish) (fish shell boost)
 
+[omp](https://ohmyposh.dev/docs/installation/linux) (nice looking prompt)
+```
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
 [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 ```
 apt install neovim
