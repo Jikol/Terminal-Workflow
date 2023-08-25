@@ -4,8 +4,10 @@ alias csl="cls"
 alias rld="omf reload" #! needs oh-my-fish
 alias rmr="rm -r"
 alias vim="nvim"
-alias apt="sudo apt -y"
-alias root="su root"
+alias root="su root -L"
+
+# Functions
+source ~/.config/fish/functions/use-nala.fish
 
 # Listings
 alias ls="exa --color always --icons" #! needs exa
