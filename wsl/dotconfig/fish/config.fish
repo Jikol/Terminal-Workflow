@@ -5,6 +5,7 @@ alias rld="omf reload" #! needs oh-my-fish
 alias rmr="rm -r"
 alias vim="nvim"
 alias root="su root -L"
+alais cat="batcat"
 
 # Functions
 source ~/.config/fish/functions/use-nala.fish

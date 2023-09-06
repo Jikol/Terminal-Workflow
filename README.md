@@ -88,6 +88,11 @@ apt install neovim
 apt install exa
 ```
 
+[batcat](https://github.com/sharkdp/bat) (modern cat replacement)
+```
+apt install bat
+```
+
 [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
 
 [tmux](https://github.com/tmux/tmux/wiki) (terminal emulator)
