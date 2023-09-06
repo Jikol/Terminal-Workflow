@@ -91,6 +91,7 @@ apt install exa
 [batcat](https://github.com/sharkdp/bat) (modern cat replacement)
 ```
 apt install bat
+batcat cache --build
 ```
 
 [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
