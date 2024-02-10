@@ -7,7 +7,7 @@ Namespace: [Catppuccin](https://github.com/catppuccin/catppuccin)
 - [windows-terminal](https://github.com/catppuccin/windows-terminal)
 - [tmux](https://github.com/catppuccin/tmux)
 
-Font: [JetBrainsMono NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)
+Font: [JetBrainsMono NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip) (line-height: 1.27)
 
 ## Windows Install
 
