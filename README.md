@@ -70,6 +70,9 @@ apt install neovim
 ```
 
 [miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers) (python envs manager)
+```
+/bin/bash -c "$(wget -q -O install.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)" && /bin/bash install.sh -b && /bin/bash -c "rm -f install.sh"
+```
 
 [fish](https://fishshell.com/) (shell)
 ```
@@ -77,10 +80,13 @@ brew install fish
 ```
  
 [omf](https://github.com/oh-my-fish/oh-my-fish) (fish shell boost)
+```
+/home/linuxbrew/.linuxbrew/bin/fish -c "$(curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install)"
+```
 
 [fisher](https://github.com/jorgebucaran/fisher) (fish shell plugin manager)
 ```
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+/home/linuxbrew/.linuxbrew/bin/fish -c "$(curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish) | source && fisher install jorgebucaran/fisher"
 ```
 
 [omp](https://ohmyposh.dev/docs/installation/linux) (nice looking prompt)
@@ -91,7 +97,6 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 [zoxide](https://github.com/ajeetdsouza/zoxide) (directory jumper)
 ```
 brew install zoxide
-zoxide init fish | source
 ```
 
 [exa](https://the.exa.website/#installation) (modern ls replacement)
@@ -102,7 +107,6 @@ apt install exa
 [batcat](https://github.com/sharkdp/bat) (modern cat replacement)
 ```
 apt install bat
-batcat cache --build
 ```
 
 [neofetch](https://github.com/dylanaraps/neofetch) (system info listing)
@@ -116,6 +120,10 @@ brew install btop
 ```
 
 [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
+```
+wget "https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb"
+sudo dpkg -i vivid_0.8.0_amd64.deb
+```
 
 [tmux](https://github.com/tmux/tmux/wiki) (terminal emulator)
 ```
@@ -125,20 +133,16 @@ apt install tmux
 [tpm](https://github.com/tmux-plugins/tpm) (tmux plugin manager)
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-tmux source 
 ```
 
 ## Copy locations
 
-- `dotconfig` to `$HOME/.config`
-- `.wslconfig` to `$HOME`
-- `windows-terminal\settings.json` to `$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_[*]\LocalState`
-- `nvim` to  `$HOME\AppData\Local\nvim`
-- `wsl` to `\\wsl.localhost\[distro]\home\[user]`
-- `wsl\dotconfig` to `\\wsl.localhost\Debian\home\[user]\.config`
+dotconfig-wsl module copy into home folder
 
 ## Reload configs
 ```
-omf reload
+source ~/.config/fish/config.fish
 tmux source ~/.config/tmux/tmux.conf
+zoxide init fish | source
+batcat cache --build
 ```
