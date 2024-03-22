@@ -59,6 +59,11 @@ scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/downl
 
 ## WSL (Debian) Install
 
+[neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+```
+apt install neovim
+```
+
 [homebrew](https://brew.sh/) (package manager)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -73,14 +78,20 @@ brew install fish
  
 [omf](https://github.com/oh-my-fish/oh-my-fish) (fish shell boost)
 
+[fisher](https://github.com/jorgebucaran/fisher) (fish shell plugin manager)
+```
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+
 [omp](https://ohmyposh.dev/docs/installation/linux) (nice looking prompt)
 ```
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
-[neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+[zoxide](https://github.com/ajeetdsouza/zoxide) (directory jumper)
 ```
-apt install neovim
+brew install zoxide
+zoxide init fish | source
 ```
 
 [exa](https://the.exa.website/#installation) (modern ls replacement)
