@@ -105,6 +105,16 @@ apt install bat
 batcat cache --build
 ```
 
+[neofetch](https://github.com/dylanaraps/neofetch) (system info listing)
+```
+apt install neofetch
+```
+
+[btop](https://github.com/aristocratos/btop?tab=readme-ov-file#installation) (better top replacement)
+```
+brew install btop
+```
+
 [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
 
 [tmux](https://github.com/tmux/tmux/wiki) (terminal emulator)
