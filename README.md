@@ -121,8 +121,7 @@ brew install btop
 
 [vidid](https://github.com/sharkdp/vivid) (fixed terminal colors)
 ```
-wget "https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb"
-sudo dpkg -i vivid_0.8.0_amd64.deb
+/bin/bash -c "$(wget -q -O vivid.deb https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb)" && sudo /bin/bash -c "dpkg -i vivid.deb && rm -f vivid.deb"
 ```
 
 [tmux](https://github.com/tmux/tmux/wiki) (terminal emulator)
@@ -142,7 +141,10 @@ dotconfig-wsl module copy into home folder
 ## Reload configs
 ```
 source ~/.config/fish/config.fish
+tmux new-session -d
 tmux source ~/.config/tmux/tmux.conf
+tmux kill-server
+conda init fish
 zoxide init fish | source
 batcat cache --build
 ```
