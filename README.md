@@ -59,6 +59,11 @@ scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/downl
 
 ## WSL (Debian) Install
 
+[git](https://git-scm.com/)
+```
+apt install git
+```
+
 [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 ```
 apt install neovim
