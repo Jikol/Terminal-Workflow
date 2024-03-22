@@ -123,6 +123,10 @@ apt install tmux
 ```
 
 [tpm](https://github.com/tmux-plugins/tpm) (tmux plugin manager)
+```
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+tmux source 
+```
 
 ## Copy locations
 
@@ -132,3 +136,9 @@ apt install tmux
 - `nvim` to  `$HOME\AppData\Local\nvim`
 - `wsl` to `\\wsl.localhost\[distro]\home\[user]`
 - `wsl\dotconfig` to `\\wsl.localhost\Debian\home\[user]\.config`
+
+## Reload configs
+```
+omf reload
+tmux source ~/.config/tmux/tmux.conf
+```
