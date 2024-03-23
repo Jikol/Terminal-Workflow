@@ -136,7 +136,7 @@ apt install tmux
 
 [tpm](https://github.com/tmux-plugins/tpm) (tmux plugin manager)
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+/bin/bash -c "git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm"
 ```
 
 ## Copy locations
