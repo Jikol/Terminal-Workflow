@@ -1,3 +1,6 @@
 [submodule "dotconfig-wsl"]
 	path = dotconfig-wsl
 	url = git@github.com:Jikol/dotconfig-wsl.git
+[submodule "dotconfig-win"]
+	path = dotconfig-win
+	url = git@github.com:Jikol/dotconfig-win.git
