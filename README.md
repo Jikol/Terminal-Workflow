@@ -8,8 +8,13 @@ Namespace: [Catppuccin](https://github.com/catppuccin/catppuccin)
 
 - [windows-terminal](https://github.com/catppuccin/windows-terminal)
 - [tmux](https://github.com/catppuccin/tmux)
+- [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/catppuccin.omp.json)
+- [batcat](https://github.com/catppuccin/bat)
+- [vivid](https://github.com/sharkdp/vivid/blob/master/themes/catppuccin-mocha.yml)
 
 Font: [JetBrainsMono NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip) (line-height: 1.27)
+
+
 
 ## Windows Programs
 
@@ -49,12 +54,7 @@ Install-Module -Name PSReadLine -RequiredVersion 2.1.0
 Install-Module -Name PSFzf -RequiredVersion 2.0.0
 ```
 
-[ntop](https://github.com/gsass1/NTop)
- ```
- scoop install ntop
- ```
-
-[omp](https://ohmyposh.dev/docs/installation/windows)
+[oh-my-posh](https://ohmyposh.dev/docs/installation/windows)
 ```
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 ```
