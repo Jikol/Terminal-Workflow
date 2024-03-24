@@ -6,10 +6,10 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+c"
+            "keys": "ctrl+right"
         },
         {
             "command": 
@@ -22,34 +22,9 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "right"
+                "action": "quakeMode"
             },
-            "keys": "ctrl+shift+right"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "ctrl+up"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "ctrl+left"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+alt+t"
         },
         {
             "command": "unbound",
@@ -116,13 +91,20 @@
             "keys": "ctrl+alt+up"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
+            "command": "unbound",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+left"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+up"
         },
         {
             "command": 
@@ -130,14 +112,46 @@
                 "action": "splitPane",
                 "split": "down"
             },
-            "keys": "ctrl+shift+down"
+            "keys": "ctrl+down"
         },
         {
             "command": 
             {
-                "action": "quakeMode"
+                "action": "copy",
+                "singleLine": false
             },
-            "keys": "ctrl+alt+t"
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            }
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            }
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "closePane",
@@ -148,8 +162,7 @@
             {
                 "action": "resizePane",
                 "direction": "right"
-            },
-            "keys": "ctrl+right"
+            }
         },
         {
             "command": 
@@ -165,15 +178,14 @@
                 "action": "splitPane",
                 "split": "up"
             },
-            "keys": "ctrl+shift+up"
+            "keys": "ctrl+up"
         },
         {
             "command": 
             {
                 "action": "resizePane",
                 "direction": "down"
-            },
-            "keys": "ctrl+down"
+            }
         },
         {
             "command": 
@@ -189,7 +201,7 @@
                 "action": "splitPane",
                 "split": "left"
             },
-            "keys": "ctrl+shift+left"
+            "keys": "ctrl+left"
         },
         {
             "command": 
@@ -222,18 +234,20 @@
         "defaults": 
         {
             "backgroundImageOpacity": 0.4,
-            "colorScheme": "Catppuccin Macchiato",
+            "colorScheme": "Catppuccin Mocha",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
+                "cellHeight": "1.29",
                 "face": "JetBrainsMono Nerd Font Mono",
                 "size": 11.0,
                 "weight": "normal"
             },
-            "opacity": 95,
+            "opacity": 80,
             "padding": "8",
             "tabColor": "#363A4F",
-            "useAcrylic": true
+            "tabTitle": "Terminal",
+            "useAcrylic": false
         },
         "list": 
         [
@@ -244,8 +258,10 @@
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "Terminal",
+                "opacity": 80,
                 "source": "Windows.Terminal.PowershellCore",
-                "tabTitle": "Terminal"
+                "tabTitle": "Terminal",
+                "useAcrylic": false
             },
             {
                 "colorScheme": "Catppuccin Mocha",
@@ -254,16 +270,18 @@
                 "hidden": false,
                 "icon": "%USERPROFILE%\\Pictures\\Icons\\Git-Icon-White.png",
                 "name": "Git Bash",
+                "opacity": 80,
                 "startingDirectory": "%USERPROFILE%",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Git Bash"
             },
             {
                 "colorScheme": "Catppuccin Mocha",
-                "commandline": "C:\\Windows\\system32\\wsl.exe exec tmux new-session -A -s main",
+                "commandline": "wsl exec tmux new-session -A -s main",
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
                 "name": "Linux",
+                "opacity": 80,
                 "source": "Windows.Terminal.Wsl",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Linux"
@@ -583,6 +601,7 @@
             "tab": 
             {
                 "background": "#24273AFF",
+                "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
@@ -594,6 +613,9 @@
             "window": 
             {
                 "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
                 "useMica": false
             }
         },
@@ -602,6 +624,7 @@
             "tab": 
             {
                 "background": "#1E1E2EFF",
+                "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
@@ -613,48 +636,9 @@
             "window": 
             {
                 "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
                 "useMica": false
             }
         }
